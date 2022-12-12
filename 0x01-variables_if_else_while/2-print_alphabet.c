@@ -1,14 +1,13 @@
 #include <stdio.h>
-
 /**
- * main - A script that prints all the alphabets
+ * main - A script that prints all lowercase alphabet
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int ch = 'a';
 
-	while(ch < 'z')
+	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
