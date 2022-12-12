@@ -1,22 +1,20 @@
 #include <stdio.h>
-
 /**
- * main - A script that prints all the alphabets
+ * main - prints all single hexedecimals
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ch = 'a';
+	int ch = '0';
 
-	while (ch <= 'z')
+	while (ch <= '9')
 	{
 		putchar(ch);
 		ch++;
 	}
+	ch = 'a';
 
-	ch = 'A';
-
-	while (ch <= 'Z')
+	while (ch <= 'f')
 	{
 		putchar(ch);
 		ch++;
@@ -24,4 +22,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-

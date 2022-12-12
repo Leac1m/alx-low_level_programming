@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - A script that prints all the alphabets
+ * main - prints all letters except 'e' and 'q'
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -10,18 +9,16 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		putchar(ch);
-		ch++;
-	}
-
-	ch = 'A';
-
-	while (ch <= 'Z')
-	{
-		putchar(ch);
-		ch++;
+		if (ch == 'q' || ch == 'e')
+		{
+			ch++;
+		}
+		else
+		{
+			putchar(ch);
+			ch++;
+		}
 	}
 	putchar('\n');
 	return (0);
 }
-
