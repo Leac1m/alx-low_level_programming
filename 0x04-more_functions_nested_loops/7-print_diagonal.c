@@ -13,6 +13,7 @@ void print_diagonal(int n)
 	{
 		for (c = 0; c < r; c++)
 		{
+			if (c != 0)
 			_putchar(' ');
 		}
 		_putchar(92);
