@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * _strlen - returns the length of a string.
  * @s: pointer for string
@@ -6,13 +6,12 @@
  */
 int _strlen(char *s)
 {
-	int counter;
+int counter;
 
-	while (*s != '\0')
-	{
-		_putchar(*s);
-		s++;
-		counter++;
-	}
-	return (counter);
+while (*s != '\0')
+{
+s++;
+counter++;
+}
+return (counter);
 }
