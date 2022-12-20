@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *puts2 - a function that prints every other character of a string,
 *starting with the first character, followed by a new line.
@@ -7,7 +8,7 @@
 void puts2(char *str)
 {
 int count, i = 0;
-count = _strlen(str);
+count = strlen(str);
 count--;
 while (i < count)
 {
