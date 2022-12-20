@@ -6,7 +6,7 @@
 void rev_string(char *s)
 {
 	int count, i = 0;
-	char tmp;
+	char tmp = ' ';
 
 	count = _strlen(s);
 	count--;
