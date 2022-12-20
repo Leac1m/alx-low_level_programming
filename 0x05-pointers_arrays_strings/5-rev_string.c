@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rev_string - that reverses a string
  * @s: sting pointer
@@ -8,7 +9,7 @@ void rev_string(char *s)
 	int count, i = 0;
 	char tmp = ' ';
 
-	count = _strlen(s);
+	count = strlen(s);
 	count--;
 	while (i < count)
 	{
