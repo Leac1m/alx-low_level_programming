@@ -14,7 +14,6 @@ char *_strcpy(char *dest, char *src)
 int srclen, i;
 
 srclen = strlen(src);
-printf("before loop, srclen : %d\n", srclen);
 for (i = 0; i < srclen; i++)
 {
 dest[i] = src[i];
