@@ -4,21 +4,22 @@
 /**
  * _strncat - function that concatenates two strings.
  * @dest: array to be append to.
- * @char: array to append with.
+ * @src: array to append with.
  * @n: amount of char to be use.
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-        int destlen, srclen, i;
+	int destlen, srclen, i;
 
-        destlen = strlen(dest);
-        srclen = strlen(src);
+	destlen = strlen(dest);
+	srclen = strlen(src);
 
-        for (i = 0; i < n; i++)
-        {
-                if (i >= srclen)
-                        break;
-                dest[i + destlen] = src[i];
-        }
-        return (dest);
+	for (i = 0; i < n; i++)
+	{
+		if (i >= srclen)
+			break;
+		dest[i + destlen] = src[i];
+	}
+	return (dest);
 }
