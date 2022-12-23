@@ -1,7 +1,5 @@
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "main.h"
+#include <stdio>
 /**
  * rot13 -  function that encodes a string using rot13.
  * @str: string
