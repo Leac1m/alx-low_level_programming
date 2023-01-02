@@ -9,8 +9,6 @@ void print_diagsums(int *a, int size)
 {
 	int i, sum_f = 0, sum_b = 0;
 
-	if (size < 0 || *a == NULL)
-		return;
 	for (i = 0; i < size; i++)
 	{
 		sum_f += *(a + i * size + i);
