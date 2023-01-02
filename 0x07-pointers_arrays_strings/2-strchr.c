@@ -6,19 +6,16 @@
  *
  * Return: pointer to the first occurrence
  */
-char *_strchr(char *s; char c)
+char *_strchr(char *s, char c)
 {
 	unsigned int j;
 	char *ptr;
 
-	for (j = 0; *(s + j) == '\0'; j++)
-	{
+	for (j = 0; *(s + j) != '\0'; j++)
 		if (*(s + j) == c)
 		{
-			ptr == &*(s + j);
+			ptr = &*(s + j);
 			return (ptr);
 		}
-	}
-
 	return (NULL);
 }
