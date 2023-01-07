@@ -4,6 +4,7 @@
  * main - prints the multiples of two numbers
  * @argc:arg count(expects 3)
  * @argv:arg values in array
+ * @Return: 0
  */
 int main(int argc, char *argv[])
 {
