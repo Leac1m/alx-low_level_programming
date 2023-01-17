@@ -23,4 +23,9 @@ typedef struct dog
  * @owner: owner input
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+/**
+ * print_dog - prints struct dog
+ * @d: struct dog address.
+ */
+void print_dog(struct dog *d);
 #endif
