@@ -28,4 +28,18 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  * @d: struct dog address.
  */
 void print_dog(struct dog *d);
+/**
+ * new_dog - funtion that creates a new dog.
+ * @name: name input.
+ * @age: age input.
+ * @owner: owner input.
+ * Return: name and owner, otherwise NULL
+ */
+dog_t *new_dog(char *name, float age, char *owner);
+/**
+ * free_dog - funtion that frees
+new_dog's funtion.
+ * @d: address of new_dog result.
+ */
+void free_dog(dog_t *d);
 #endif
