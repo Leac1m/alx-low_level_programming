@@ -6,6 +6,7 @@
  * at the beginning of a list_t list.
  * @head:head of file.
  * @str: string.
+ * Return: new node.
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -16,12 +17,11 @@ list_t *add_node(list_t **head, const char *str)
 	new->str = strdup(str);
 	if (new->str == NULL)
 	{
-		free(new);
+		free(new)
 		return (NULL);
 	}
-
-	while (*str != '\0')
-		 str++, str_len++;
+	while (str[str_len] != '\0')
+		str_len++;
 
 	new->len = str_len;
 
