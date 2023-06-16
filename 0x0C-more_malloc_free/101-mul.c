@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * multiply - multiplies two numbers.
@@ -43,6 +44,12 @@ int main(int argc, char *argv[])
 	int num1, num2, result;
 
 	if (argc != 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	if (!strcmp(argv[1], "") || !strcmp(argv[2], ""))
 	{
 		printf("Error\n");
 		exit(98);
